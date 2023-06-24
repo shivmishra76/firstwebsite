@@ -44,7 +44,7 @@ a:hover {
   text-decoration: none;
   color: var(--secondary-color);
 }
-nav {
+h1 {
   font-family: var(--font-h1-title);
   background-color: var(--bg-color);
 }
