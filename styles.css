@@ -1,14 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-h1-title: "Muli", sans-serf;
+  --font-family: "Quicksand", sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
+  --bg-color: #302929;
   --primary-color: #4756df;
-  --secondary-color: #ff7235;
+  --secondary-color: #77422b;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
@@ -45,4 +47,6 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color:aliceblue
 }
