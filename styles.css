@@ -9,7 +9,7 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #302929;
-  --primary-color: #4756df;
+  --primary-color: #328640;
   --secondary-color: #77422b;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
@@ -41,13 +41,44 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
   color: var(--secondary-color);
 }
-h1 {
-  font-family: var(--font-h1-title);
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(131, 158, 133, 0.959)
 }
+
+nav h1 {
+  color: var(--primary-color);
+}
+
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
 body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
