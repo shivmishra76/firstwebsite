@@ -9,17 +9,11 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
+   
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+<link rel="manifest" href="assets/icons/site.webmanifest">
 
     <!-- Animate CSS CDN -->
     <link
@@ -31,7 +25,7 @@
 
   <body>
     <!-- Navbar -->
-    <nav>
+    <nav id="navigation">
       <h1>Shivank Mishra</h1>
       <ul class="navigation">
         <li><a href="#about" class="nav-link">About</a></li>
@@ -39,23 +33,155 @@
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>
     </nav>
-    <!-- Hero Section -->
+   
+    <section class="welcome" id="welcome">
+      <p>
+        Shivank Mishra
+        <br>
+        Student, Rising Software Engineer
+      </p>
+      <!--
+        <img src="W:\Adi-new-20230702T033041Z-001\Adi-new\0A3C1BC1-4941-4BA5-B016-B598721605D4IMG_5414.JPG" alt="my-img"> 
+      -->
+    </section>
+    <section class="about" id="about">
+     
+      <h1 class="about-title">About Me</h1>
+      <p class="about-text">Hi! I am an aspiring software engineer and am interested in everything related to tech and physics.
+        <br> I'll be posting my projects and other things I'm working on here. Please reach out if you have any questions!
+      </p>
 
-    <!-- More about -->
+      
+      <h2 class="edu-title">Education</h2>
+      <p>
+        <strong>Waubonsie Valley High School</strong> <br>
+        Graduated: May 2023 <br>
+      </p>
+      <p>
+        <strong>University of Illinois at Urbana-Champaign</strong> <br>
+        Bachelor of Science in Computer Science and Astronomy <br>
+        Expected Graduation: May 2027
+      </p>
+    </section>
 
-    <!-- Skills section -->
+    <div class="container">
+    <section class="skills" id="skills">
+      
+      <h1 class="skills-title">Skills</h1>
+      <br>
+      
+      <div class="skills-body">
 
-    <!-- Projects section -->
+        <div class="port-skill">
+          <h2 class="skill-title">JavaScript</h2>
+          <div class="skills-bar"></div>
+        </div>
 
-    <!-- Contact section -->
+        <div class="port-skill">
+          <h2 class="skill-title">CSS</h2>
+          <div class="skills-bar"></div>
+        </div>
 
-    <!-- Social accounts - Fixed to the right -->
+        <div class="port-skill">
+          <h2 class="skill-title">HTML</h2>
+          <div class="skills-bar"></div>
+        </div>
 
-    <!-- Footer section -->
+        <div class="port-skill">
+          <h2 class="skill-title">Python</h2>
+          <div class="skills-bar"></div>
+        </div>
+<!--
+
+
+        <div class="port-skill">
+          <h2 class="skill-title">C++</h2>
+          <div class="skills-bar"></div>
+        </div>
+      </div>
+    </div>
+      --> 
+
+      
+    </section>
+
+    <section class="projects" id="projects">
+      
+      <h1 class="proj-title">Projects</h1>
+      <div>
+        
+        
+        
+        
+        <p class="proj-text">This website!</p>
+      </div>
+      
+        <a href="https://github.com/shivmishra76/firstwebsite">Check out the code here.</a>
+       
+        <button id="button" onclick="toggleExpandableContent()">Show</button>
+  
+  
+        <div id="expandableContent" class="expandable-content">
+    <!-- The content that will be expanded -->
+    <p id="exp-cont-title">What I learned from this project:</p>
+    <ul id="exp-cont-text">
+      <li>I built this website using HTML, CSS, and JavaScript. The reason I decided to start this project was to get some experience working with different types of code before getting to college.</li> 
+      <li>I had already learned a decent amount of JavaScript from my high school classes, but I wanted a way to put that to use in a website. </li>
+      <li>I also intend to use this website throughout the future and work and add on to it as I grow as a coder.</li>
+      <li>A lot of this project was done by watching Youtube videos and reading online websites to learn different parts of HTML and CSS.</li>
+    </ul>
+  </div>
+  <div>
+    <br>
+    <br>
+
+    <br>
+    
+    
+    
+    <p class="proj-text">UPCOMING - Chrome extension for sports game tracking</p>
+  </div>
+    <button id="button1" onclick="toggleExpandableContent1()">Show</button>
+    <div id="expandableContent1" class="expandable-content">
+<!-- The content that will be expanded -->
+<p id="exp-cont-title">What I hope to learn from this project:</p>
+<ul id="exp-cont-text">
+  <li>I hope to get more experience using JavaScript by building a chrome extension.</li> 
+  <li>I will also get more experience building something that is practical and can be used in day to day life.</li> 
+
+</ul>
+
+<br>
+</div>  
+<br>
+<br>
+<p class="proj-text">UPCOMING - Simple platforming game using Python</p>
+   
+    <button id="button2" onclick="toggleExpandableContent2()">Show</button>
+    <div id="expandableContent2" class="expandable-content">
+<!-- The content that will be expanded -->
+<p id="exp-cont-title">What I hope to learn from this project:</p>
+<ul id="exp-cont-text">
+  <li>I hope to get more experience using Python or C to build a simple application</li> 
+  <li>I am pretty passionate about video games and building my own game will both be interesting to me and beneficial as I get experience in other languages.</li> 
+
+</ul>
+</div>
+    </section>
+
+    <section class="contact" id="contact">
+      
+      <h1 class="contact-title">Contact</h1>
+      
+      <p class="contact-text">
+        Email: shivankmishra01@gmail.com <br>
+        Phone: (630) 885-1096<br>
+        <a href="https://www.linkedin.com/in/shivank-mishra-490392254">LinkedIn       </a>
+        <a href="https://www.github.com/shivmishra76">      Github</a>
+
+      </p>
+    </section>
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
